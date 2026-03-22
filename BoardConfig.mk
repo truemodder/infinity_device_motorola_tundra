@@ -39,6 +39,16 @@ BOARD_SUPER_PARTITION_SIZE := 8925478912
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# Maintainer Name
+INFINITY_MAINTAINER := TrueModder
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := true
+
+# Whether Including Google Apps
+WITH_GAPPS := true
 
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
