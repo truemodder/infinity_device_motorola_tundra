@@ -89,5 +89,10 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-tundra-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-tundra.conf
 
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/tundra/tundra-vendor.mk)
